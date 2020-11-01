@@ -1,5 +1,6 @@
 import * as React from "react";
 import skeletonGif from "./assets/skelly.gif";
+import "./DancingSkeleton.scss";
 
 export interface Props {}
 
