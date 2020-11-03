@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "Kellyween";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/font/GREENFUZ.eot");
+  src: local("Kellyween"), local("Kellyween"),
+    url("./assets/font/GREENFUZ.eot") format("embedded-opentype"),
+    url("./assets/font/GREENFUZ.woff2") format("woff2"),
+    url("./assets/font/GREENFUZ.woff") format("woff"),
+    url("./assets/font/GREENFUZ.TTF") format("truetype"),
+    url("./assets/font/GREENFUZ.svg") format("svg");
+}
+
 body {
   height: 100vh;
   width: 100vw;
@@ -17,4 +30,5 @@ body {
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  font: "Kellyween", Sans-Serif;
 }

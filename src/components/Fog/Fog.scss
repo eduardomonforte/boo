@@ -2,8 +2,6 @@
   position: absolute;
   height: 100vh;
   width: 100vw;
-  //   background-color: red;
-  //   opacity: 50%;
 
   #FogLayer1,
   #FogLayer1,
@@ -42,13 +40,6 @@
       foglayer_moveme 13s linear infinite;
   }
 
-  /* ---------- Moving Fog ---------- */
-  /*
-    'size: cover' || 'size: 100%'; results remain the same
-    'attachment: scroll' can be added or removed; results remain the same
-    'attachment: fixed' causing unexpected results in Chrome
-    'repeat-x' || 'no-repeat'; results remain the same
-  */
   #FogLayer1 .FogImage1,
   #FogLayer1 .FogImage2 {
     background: url("./assets/fog.png") center center/cover no-repeat
@@ -62,7 +53,6 @@
       transparent;
   }
 
-  /* ---------- Keyframe Layer 1 ---------- */
   @-webkit-keyframes foglayer_01_opacity {
     0% {
       opacity: 0.1;
@@ -143,7 +133,6 @@
       opacity: 0.1;
     }
   }
-  /* ---------- Keyframe Layer 2 ---------- */
   @-webkit-keyframes foglayer_02_opacity {
     0% {
       opacity: 0.5;
@@ -212,7 +201,6 @@
       opacity: 0.5;
     }
   }
-  /* ---------- Keyframe Layer 3 ---------- */
   @-webkit-keyframes foglayer_03_opacity {
     0% {
       opacity: 0.8;
@@ -281,7 +269,6 @@
       opacity: 0.8;
     }
   }
-  /* ---------- Keyframe moveMe ---------- */
   @-webkit-keyframes foglayer_moveme {
     0% {
       left: 0;
