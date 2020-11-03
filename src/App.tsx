@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.scss";
 import Fog from "./components/Fog/Fog";
+import DancingSkeleton from "./components/DancingSkeleton/DancingSkeleton";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           </span>{" "}
           🌚
         </p>
+        <DancingSkeleton></DancingSkeleton>
       </div>
     </>
   );
