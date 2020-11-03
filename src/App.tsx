@@ -9,7 +9,7 @@ function App() {
       <div className="App">
         <p className="AppTitle">Happy Kellyween!</p>
         <p className="AppDescription">
-          <span className="Italic">Spooky season</span> ha llegado a su fin,
+          <span className="Italic">Spooky season</span> podrá haber terminado,
           pero las sorpresas seguirán llegando.
         </p>
       </div>
