@@ -6,7 +6,13 @@ function App() {
   return (
     <>
       <Fog></Fog>
-      <div className="App">Happy Kellyween</div>
+      <div className="App">
+        <p className="AppTitle">Happy Kellyween!</p>
+        <p className="AppDescription">
+          <span className="Italic">Spooky season</span> ha llegado a su fin,
+          pero las sorpresas seguirán llegando.
+        </p>
+      </div>
     </>
   );
 }

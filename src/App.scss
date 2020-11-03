@@ -14,8 +14,8 @@
 body {
   height: 100vh;
   width: 100vw;
+  margin: 0;
   overflow: hidden;
-  background: rgb(34, 23, 66);
   background: linear-gradient(
     0deg,
     rgba(34, 23, 66, 1) 0%,
@@ -30,5 +30,25 @@ body {
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  font: "Kellyween", Sans-Serif;
+  color: white;
+  text-align: center;
+}
+
+.AppTitle {
+  font-family: "Kellyween", Sans-Serif;
+  font-size: 72px;
+}
+
+.AppDescription {
+  font-size: 24px;
+}
+
+.AppTitle,
+.AppDescription {
+  margin: 0px;
+  padding: 16px;
+}
+
+.Italic {
+  font-style: italic;
 }
