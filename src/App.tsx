@@ -14,7 +14,7 @@ function App() {
         </p>
         <p className="AppDescription">
           <span className="Italic">Spooky season</span> podrá haber terminado,
-          pero las sorpresas apenas están empezando. 👻
+          pero las sorpresas apenas están por empezar. 👻
         </p>
         {/* <div className="IframeContainer">
           <iframe
