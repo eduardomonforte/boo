@@ -1,17 +1,54 @@
+@font-face {
+  font-family: "Kellyween";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/font/GREENFUZ.eot");
+  src: local("Kellyween"), local("Kellyween"),
+    url("./assets/font/GREENFUZ.eot") format("embedded-opentype"),
+    url("./assets/font/GREENFUZ.woff2") format("woff2"),
+    url("./assets/font/GREENFUZ.woff") format("woff"),
+    url("./assets/font/GREENFUZ.TTF") format("truetype"),
+    url("./assets/font/GREENFUZ.svg") format("svg");
+}
+
 body {
-  background-color: #000000;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 23, 66, 1) 0%,
+    rgba(74, 45, 126, 1) 100%
+  );
+}
 
-  .App {
-    text-align: center;
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  text-align: center;
+}
 
-    .App-header {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-size: calc(10px + 2vmin);
-      color: white;
-    }
-  }
+.AppTitle {
+  font-family: "Kellyween", Sans-Serif;
+  font-size: 72px;
+}
+
+.AppDescription {
+  font-size: 24px;
+}
+
+.AppTitle,
+.AppDescription {
+  margin: 0px;
+  padding: 16px;
+}
+
+.Italic {
+  font-style: italic;
 }
