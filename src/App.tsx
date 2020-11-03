@@ -1,14 +1,14 @@
 import React from "react";
 import "./App.scss";
 import DancingSkeleton from "./components/DancingSkeleton/DancingSkeleton";
+import Fog from "./components/Fog/Fog";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <DancingSkeleton></DancingSkeleton>
-      </header>
-    </div>
+    <>
+      <Fog></Fog>
+      <div className="App">{/* <DancingSkeleton></DancingSkeleton> */}</div>
+    </>
   );
 }
 
