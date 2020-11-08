@@ -1,14 +1,42 @@
 @font-face {
-  font-family: "Kellyween";
+  font-family: "GreenFuz";
   font-style: normal;
   font-weight: 400;
-  src: url("./assets/font/GREENFUZ.eot");
-  src: local("Kellyween"), local("Kellyween"),
-    url("./assets/font/GREENFUZ.eot") format("embedded-opentype"),
-    url("./assets/font/GREENFUZ.woff2") format("woff2"),
-    url("./assets/font/GREENFUZ.woff") format("woff"),
-    url("./assets/font/GREENFUZ.TTF") format("truetype"),
-    url("./assets/font/GREENFUZ.svg") format("svg");
+  src: url("./assets/fonts/GreenFuz/GREENFUZ.eot");
+  src: local("GreenFuz"), local("GreenFuz"),
+    url("./assets/fonts/GreenFuz/GREENFUZ.eot") format("embedded-opentype"),
+    url("./assets/fonts/GreenFuz/GREENFUZ.woff2") format("woff2"),
+    url("./assets/fonts/GreenFuz/GREENFUZ.woff") format("woff"),
+    url("./assets/fonts/GreenFuz/GREENFUZ.ttf") format("truetype"),
+    url("./assets/fonts/GreenFuz/GREENFUZ.svg") format("svg");
+}
+
+@font-face {
+  font-family: "CircularBlack";
+  font-size: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/CircularBlack/CircularStd-Black.eot");
+  src: local("CircularBlack"), local("CircularBlack"),
+    url("./assets/fonts/CircularBlack/CircularStd-Black.eot")
+      format("embedded-opentype"),
+    url("./assets/fonts/CircularBlack/CircularStd-Black.woff2") format("woff2"),
+    url("./assets/fonts/CircularBlack/CircularStd-Black.woff") format("woff"),
+    url("./assets/fonts/CircularBlack/CircularStd-Black.ttf") format("truetype"),
+    url("./assets/fonts/CircularBlack/CircularStd-Black.svg") format("svg");
+}
+
+@font-face {
+  font-family: "GothamMedium";
+  font-size: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/GothamMedium/GothamMedium.eot");
+  src: local("GothamMedium"), local("GothamMedium"),
+    url("./assets/fonts/GothamMedium/GothamMedium.eot")
+      format("embedded-opentype"),
+    url("./assets/fonts/GothamMedium/GothamMedium.woff2") format("woff2"),
+    url("./assets/fonts/GothamMedium/GothamMedium.woff") format("woff"),
+    url("./assets/fonts/GothamMedium/GothamMedium.ttf") format("truetype"),
+    url("./assets/fonts/GothamMedium/GothamMedium.svg") format("svg");
 }
 
 body {
@@ -21,55 +49,6 @@ body {
     rgba(34, 23, 66, 1) 0%,
     rgba(74, 45, 126, 1) 100%
   );
-}
-
-.App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-  color: white;
-  text-align: center;
-}
-
-.AppTitle {
-  font-family: "Kellyween", Sans-Serif;
-  font-size: 90px;
-  padding: 16px 16px 32px 16px;
-
-  @media screen and (max-width: 375px) {
-    font-size: 72px;
-  }
-
-  @media screen and (min-width: 376px) and (max-width: 768px) {
-    font-size: 84px;
-  }
-}
-
-.AppDescription {
-  font-size: 24px;
-  padding: 0px 72px 16px 72px;
-
-  @media screen and (max-width: 375px) {
-    font-size: 18px;
-    padding: 0px 32px 16px 32px;
-  }
-
-  @media screen and (min-width: 376px) and (max-width: 768px) {
-    font-size: 28px;
-    padding: 0 72px 16px 72px;
-  }
-}
-
-.AppTitle,
-.AppDescription {
-  margin: 0px;
-}
-
-.IframeContainer {
-  padding-top: 16px;
 }
 
 .Italic {

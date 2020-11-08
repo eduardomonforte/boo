@@ -4,6 +4,7 @@
   width: 100vw;
   margin: 0;
   overflow: hidden;
+  z-index: -1;
   -webkit-filter: blur(4px) grayscale(0.2) saturate(1.2) sepia(0.2);
   filter: blur(4px) grayscale(0.2) saturate(1.2) sepia(0.2);
 
