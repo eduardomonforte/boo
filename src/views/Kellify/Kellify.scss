@@ -1,0 +1,87 @@
+.Kellify {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.KellifyTitleContainer {
+  display: flex;
+  align-items: center;
+  padding: 72px 16px 32px 16px;
+
+  @media screen and (max-width: 375px) {
+    padding-top: 40px;
+  }
+}
+
+.KellifyTitle {
+  font-family: "GothamMedium", Sans-Serif;
+  font-size: 90px;
+
+  @media screen and (max-width: 375px) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: 376px) and (max-width: 768px) {
+    font-size: 84px;
+  }
+}
+
+.SpotifyIcon {
+  height: 180px;
+  padding-right: 28px;
+
+  @media screen and (max-width: 375px) {
+    height: 96px;
+  }
+
+  @media screen and (min-width: 376px) and (max-width: 768px) {
+    font-size: 168px;
+  }
+}
+
+.SpotifyButton {
+  background-color: #1db954;
+  font-size: 14px;
+  font-family: "CircularBlack", Sans-Serif;
+  color: white;
+  text-decoration: none;
+  padding: 16px 48px 18px;
+  border-radius: 500px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1ed760;
+  }
+}
+
+.LoadingText {
+  font-family: "GothamMedium", Sans-Serif;
+  font-size: 24px;
+  padding-top: 16px;
+
+  @media all and (max-width: 375px) {
+    font-size: 16px;
+  }
+}
+
+.KellifyDescription {
+  font-family: "GothamMedium", Sans-Serif;
+  font-size: 24px;
+  padding-bottom: 24px;
+  padding: 0 72px 24px 72px;
+
+  @media all and (max-width: 375px) {
+    font-size: 16px;
+    padding: 0 32px 24px 32px;
+  }
+}
+
+.PlaylistContainer {
+  padding-top: 16px;
+}

@@ -1,40 +1,29 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.scss";
 import Fog from "./components/Fog/Fog";
-import DancingSkeleton from "./components/DancingSkeleton/DancingSkeleton";
+import Home from "./views/Home/Home";
+import NotFound from "./views/NotFound/NotFound";
+import Kellify from "./views/Kellify/Kellify";
 
 function App() {
   return (
     <>
       <Fog></Fog>
-      <div className="App">
-        <p className="AppTitle">Happy Kellyween!</p>
-        <p className="AppDescription">
-          Gracias por hacer de estos últimos meses los mejores de la cuarentena.
-        </p>
-        <p className="AppDescription">
-          <span className="Italic">Spooky season</span> podrá haber terminado,
-          pero las sorpresas apenas están por empezar. 👻
-        </p>
-        {/* <div className="IframeContainer">
-          <iframe
-            title="spotify"
-            src="https://open.spotify.com/embed/playlist/1ncjMjObE9sv0K5PocNLWe"
-            frameBorder="0"
-            allowTransparency={true}
-            width="300"
-            height="380"
-            allow="encrypted-media"
-          ></iframe>
-        </div> */}
-        <p className="AppDescription">
-          <span className="Italic">
-            Visita esta página mañana temprano para la siguiente sorpresa.
-          </span>{" "}
-          🌚
-        </p>
-        <DancingSkeleton></DancingSkeleton>
-      </div>
+      <Router>
+        <Switch>
+          <Route exact path="/kellify">
+            <Kellify />
+          </Route>
+          <Route exact path="/boo">
+            <Home />
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route component={NotFound} />
+        </Switch>
+      </Router>
     </>
   );
 }
