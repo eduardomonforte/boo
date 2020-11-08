@@ -15,9 +15,6 @@ function App() {
           <Route exact path="/kellify">
             <Kellify />
           </Route>
-          <Route exact path="/boo">
-            <Home />
-          </Route>
           <Route exact path="/">
             <Home />
           </Route>
